@@ -10,6 +10,13 @@ namespace CSBasic
     {
         static void Main(string[] args)
         {
+            var name = "김나윤";
+            
+
+            /*error*/
+            //int break;
+            //int 🍔🤣;
+            Console.WriteLine("Hello");
         }
     }
 }
