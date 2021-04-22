@@ -56,9 +56,47 @@ namespace CSBasic
             Console.WriteLine("미림여자정보과학\t고");
 
 
+            //문자 연결 연산자
+            //concat concatenate operator
+            //concatenation perator
+            Console.WriteLine("ABC" + "EFG");
+            Console.WriteLine('A' + 'E'); //정수 + 정수  +가 덧셈 연산자가 된다.
+            Console.WriteLine("ABC" + 'E');
 
+            Console.WriteLine("ABC"[2]); //C
+            Console.WriteLine("ABC"[3]); //error 예외 발생
 
+            //bool
+            bool isPlay = true;
+            bool isDeath = false;
 
+            //comparison operator
+            Console.WriteLine(52 == 163);
+            Console.WriteLine(52 != 163);
+            Console.WriteLine(52 > 163);
+            Console.WriteLine(52 < 163);
+            Console.WriteLine(52 >= 163);
+            Console.WriteLine(52 <= 163);
+
+            //Logic operator
+            Console.WriteLine(!(true));
+            Console.WriteLine(true || false);
+            Console.WriteLine(true && false);
+
+            //단항연산자 - unary operator
+            Console.WriteLine(!(true));
+            int i = 0;
+            i++;
+            //이항연산자 - binary operator
+            i = 1 + 2;
+
+            //삼항연산자 - ternary operator
+            int j;
+            j = (i > 3) ? 0 : 1;
+
+            Console.WriteLine(3 < 4 || 5 > 8);
+            Console.WriteLine(3 < 4 && 5 > 8);
+            Console.WriteLine(!(true)|| 5 > 8);
 
 
         }
