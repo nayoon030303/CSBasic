@@ -64,7 +64,7 @@ namespace CSBasic
             Console.WriteLine("ABC" + 'E');
 
             Console.WriteLine("ABC"[2]); //C
-            Console.WriteLine("ABC"[3]); //error 예외 발생
+          //  Console.WriteLine("ABC"[3]); //error 예외 발생
 
             //bool
             bool isPlay = true;
@@ -98,6 +98,17 @@ namespace CSBasic
             Console.WriteLine(3 < 4 && 5 > 8);
             Console.WriteLine(!(true)|| 5 > 8);
 
+           // int a = 2143324240;
+            //int b = 100000000;
+           // Console.WriteLine(a + b);
+
+            //sizeof(자료형)
+            Console.WriteLine("int: " + sizeof(int));
+            Console.WriteLine("long: " + sizeof(long));
+            Console.WriteLine("float: " + sizeof(float));
+            Console.WriteLine("int: " + sizeof(double));
+            Console.WriteLine("int: " + sizeof(int));
+            Console.WriteLine("int: " + sizeof(int));
 
         }
     }
