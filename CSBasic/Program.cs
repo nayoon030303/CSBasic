@@ -153,6 +153,16 @@ namespace CSBasic
             Console.WriteLine(userName.GetType());
             Console.WriteLine(userAge.GetType());
 
+            string input;
+            while(true)
+            {
+                Console.Write("입력>>");
+                input = Console.ReadLine();
+                if (input.Equals("q"))
+                    break;
+                else
+                    Console.WriteLine(input);
+            }
         }
     }
 }
