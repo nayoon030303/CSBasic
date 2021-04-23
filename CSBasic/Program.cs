@@ -144,6 +144,14 @@ namespace CSBasic
             Console.WriteLine(_char.GetType());
             Console.WriteLine(_string.GetType());
 
+            //var 키워드 지역변수로만 사용 가능. 
+            var userName = "Kim na yoon";
+            var userAge = 10;
+            Console.WriteLine(userName);
+            Console.WriteLine(userAge);
+
+            Console.WriteLine(userName.GetType());
+            Console.WriteLine(userAge.GetType());
 
         }
     }
