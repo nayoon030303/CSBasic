@@ -153,6 +153,8 @@ namespace CSBasic
             Console.WriteLine(userName.GetType());
             Console.WriteLine(userAge.GetType());
 
+
+            //read && write
             string input;
             while(true)
             {
