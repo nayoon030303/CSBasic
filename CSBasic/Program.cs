@@ -155,7 +155,7 @@ namespace CSBasic
 
 
             //read && write
-            string input;
+          /*  string input;
             while(true)
             {
                 Console.Write("입력>>");
@@ -164,7 +164,25 @@ namespace CSBasic
                     break;
                 else
                     Console.WriteLine(input);
-            }
+            }*/
+
+            var a = (int)10.0;
+            var b1 = (float)10;
+            var c1 = (double)10;
+
+            long longNumber = 234555566666666L + 234555566666666L;
+            int intNumber = (int)longNumber;
+            Console.WriteLine(intNumber);
+
+            long longNumber2 = 52773;
+            int intNumber2 = (int)longNumber2;
+            Console.WriteLine(intNumber2);
+
+            Console.WriteLine("int, long, float, double 맥스밸류");
+            Console.WriteLine(int.MaxValue);
+            Console.WriteLine(long.MaxValue);
+            Console.WriteLine(float.MaxValue);
+            Console.WriteLine(Double.MaxValue);
         }
     }
 }
