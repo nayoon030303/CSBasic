@@ -93,6 +93,10 @@ namespace CSBasic2
                     break;
 
             }
+            string input2 = Console.ReadLine();
+            int number = int.Parse(input2);
+            Console.WriteLine((number > 0) ? "자연수" : "자연수 아님");
+            //Console.WriteLine((number > 0) ? a() : b());
         }
     }
 }
