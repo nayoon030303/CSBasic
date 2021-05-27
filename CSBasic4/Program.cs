@@ -6,6 +6,15 @@ using System.Threading.Tasks;
 
 namespace CSBasic4
 {
+    class MyMath
+    {
+        int scmemnumber= 42;
+        public static double PI = 3.141592;
+        public static void Greeting()
+        {
+            Console.WriteLine("Creeting");
+        }
+    }
     class Car
     {
         int carNumber;
@@ -61,6 +70,22 @@ namespace CSBasic4
             Console.WriteLine(Math.Round(54.34));
             Console.WriteLine(Math.Max(33, 124));
             Console.WriteLine(Math.Min(33, 124));
+
+
+            Product product = new Product();
+            product.name = "감자";
+            product.price = 2000;
+
+            Console.WriteLine(product.name+":"+product.price+"원");
+
+            Product productA = new Product(){name = "짜장면", price=5000};
+            Product productB = new Product(){name = "짬뽕", price=8000};
+            Product productC = new Product(){name = "탕수육"};
+            Product productD = new Product(){ price = 999999};
+            Product productE = new Product(){ price = 3000, name = "양장피"};
+
+
+
         }
     }
 }
