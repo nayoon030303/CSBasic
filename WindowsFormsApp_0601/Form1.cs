@@ -16,5 +16,15 @@ namespace WindowsFormsApp_0601
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void trackBar1_Scroll(object sender, EventArgs e)
+        {
+            this.Opacity = trackBar1.Value/100.0;
+        }
     }
 }
