@@ -29,7 +29,10 @@ namespace CSBasic5
                 this.name = name;
                 this.price = price;
             }
-
+            ~Product()
+            {
+                Console.WriteLine(this.name + "의 소멸자 호출");
+            }
 
         }
 
