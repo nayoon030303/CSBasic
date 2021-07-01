@@ -9,6 +9,23 @@ namespace CSBasic5
    
     class Program
     {
+        public int instanceVariable = 10;
+
+        public int instanceMethod() 
+        {
+            return 0;
+        }
+     
+        class MyMath
+        { 
+            public static int Abs(int input)
+            {
+                return input < 0 ? -input : input;
+            }
+   
+            
+        }
+
         class Test
         {
             //Method Signature, return은 포함 x
@@ -55,6 +72,18 @@ namespace CSBasic5
 
             Test test = new Test();
             Console.WriteLine(test.Sum(1, 100));
+
+            Console.WriteLine(MyMath.Abs(52));
+            Console.WriteLine(MyMath.Abs(-333));
+
+            //클래스 메서드에서는 인스턴스 변수, 메서드 접근 불가 
+            //객체를 만들어 접근해야한다.
+            //Console.WriteLine(instanceVariable);
+
+            Program p = new Program();
+
+            Console.WriteLine(p.instanceVariable);
+            p.instanceMethod();
         }
     }
 }
