@@ -6,8 +6,23 @@ using System.Threading.Tasks;
 
 namespace CSBasic5
 {
+   
     class Program
     {
+        class Test
+        {
+            //Method Signature, return은 포함 x
+            public int Sum(int min, int max)
+            {
+                int output = 0;
+                for(int i=min; i<=max; i++)
+                {
+                    output += i;
+                }
+                return output;
+            }
+        }
+
         class MethodExample
         {
             public int Power(int x)
@@ -37,6 +52,9 @@ namespace CSBasic5
             Console.WriteLine(me.Multi(20,10));
             Console.WriteLine(me.Multi(3,10));
             me.Print();
+
+            Test test = new Test();
+            Console.WriteLine(test.Sum(1, 100));
         }
     }
 }
