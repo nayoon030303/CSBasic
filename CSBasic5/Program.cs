@@ -22,9 +22,24 @@ namespace CSBasic5
             {
                 return input < 0 ? -input : input;
             }
-   
-            
+            public static long Abs(long input)
+            {
+                return input < 0 ? -input : input;
+            }
+            public static double Abs(double input)
+            {
+                return input < 0 ? -input : input;
+            }
+
+            //Method Signature가 같은 경우 오버로딩 불가능
+           /* public static int Abs(long aw)
+            {
+                return 0;
+            }*/
+
         }
+
+        
 
         class Test
         {
@@ -84,6 +99,11 @@ namespace CSBasic5
 
             Console.WriteLine(p.instanceVariable);
             p.instanceMethod();
+
+            Console.WriteLine(MyMath.Abs(5));
+            Console.WriteLine(MyMath.Abs(-234));
+            Console.WriteLine(MyMath.Abs(52.123));
+            Console.WriteLine(MyMath.Abs(4678984561211111111));
         }
     }
 }
