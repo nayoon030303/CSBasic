@@ -29,13 +29,60 @@ namespace Chapter6_FormPx
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.btnDialogBox1 = new System.Windows.Forms.Button();
+            this.btnDialogBox3 = new System.Windows.Forms.Button();
+            this.btnDialogBox2 = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // btnDialogBox1
+            // 
+            this.btnDialogBox1.Location = new System.Drawing.Point(50, 58);
+            this.btnDialogBox1.Name = "btnDialogBox1";
+            this.btnDialogBox1.Size = new System.Drawing.Size(193, 57);
+            this.btnDialogBox1.TabIndex = 0;
+            this.btnDialogBox1.Text = "btnDialogBox1";
+            this.btnDialogBox1.UseVisualStyleBackColor = true;
+            this.btnDialogBox1.Click += new System.EventHandler(this.btnDialogBox1_Click);
+            // 
+            // btnDialogBox3
+            // 
+            this.btnDialogBox3.Location = new System.Drawing.Point(50, 261);
+            this.btnDialogBox3.Name = "btnDialogBox3";
+            this.btnDialogBox3.Size = new System.Drawing.Size(193, 57);
+            this.btnDialogBox3.TabIndex = 1;
+            this.btnDialogBox3.Text = "btnDialogBox3";
+            this.btnDialogBox3.UseVisualStyleBackColor = true;
+            this.btnDialogBox3.Click += new System.EventHandler(this.btnDialogBox1_Click);
+            // 
+            // btnDialogBox2
+            // 
+            this.btnDialogBox2.Location = new System.Drawing.Point(50, 158);
+            this.btnDialogBox2.Name = "btnDialogBox2";
+            this.btnDialogBox2.Size = new System.Drawing.Size(193, 57);
+            this.btnDialogBox2.TabIndex = 2;
+            this.btnDialogBox2.Text = "btnDialogBox2";
+            this.btnDialogBox2.UseVisualStyleBackColor = true;
+            this.btnDialogBox2.Click += new System.EventHandler(this.btnDialogBox1_Click);
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(726, 409);
+            this.Controls.Add(this.btnDialogBox2);
+            this.Controls.Add(this.btnDialogBox3);
+            this.Controls.Add(this.btnDialogBox1);
+            this.Name = "Form1";
             this.Text = "Form1";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Button btnDialogBox1;
+        private System.Windows.Forms.Button btnDialogBox3;
+        private System.Windows.Forms.Button btnDialogBox2;
     }
 }
 
