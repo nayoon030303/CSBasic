@@ -13,7 +13,9 @@ namespace Chapter6_FormPx
     public partial class Form1 : Form
     {
         public Form1()
-        {
+        { 
+            IsMdiContainer = true;
+          
             InitializeComponent();
         }
 
@@ -44,6 +46,25 @@ namespace Chapter6_FormPx
                     MessageBox.Show("가서 쉬세요!", "시스템");
                     break;
 
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnModeless_click(object sender, EventArgs e)
+        {
+            Form form = new Form2();
+           
+            if(sender == btnModeless)
+            {
+                form.MdiParent = this;
+                form.Show();
+            }else if(sender == btnModal)
+            {
+                form.ShowDialog();
             }
         }
     }

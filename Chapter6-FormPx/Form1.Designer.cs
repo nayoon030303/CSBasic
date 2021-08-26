@@ -32,6 +32,8 @@ namespace Chapter6_FormPx
             this.btnDialogBox1 = new System.Windows.Forms.Button();
             this.btnDialogBox3 = new System.Windows.Forms.Button();
             this.btnDialogBox2 = new System.Windows.Forms.Button();
+            this.btnModeless = new System.Windows.Forms.Button();
+            this.btnModal = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnDialogBox1
@@ -64,11 +66,33 @@ namespace Chapter6_FormPx
             this.btnDialogBox2.UseVisualStyleBackColor = true;
             this.btnDialogBox2.Click += new System.EventHandler(this.btnDialogBox1_Click);
             // 
+            // btnModeless
+            // 
+            this.btnModeless.Location = new System.Drawing.Point(376, 58);
+            this.btnModeless.Name = "btnModeless";
+            this.btnModeless.Size = new System.Drawing.Size(259, 111);
+            this.btnModeless.TabIndex = 3;
+            this.btnModeless.Text = "모달리스 창 열기";
+            this.btnModeless.UseVisualStyleBackColor = true;
+            this.btnModeless.Click += new System.EventHandler(this.btnModeless_click);
+            // 
+            // btnModal
+            // 
+            this.btnModal.Location = new System.Drawing.Point(376, 209);
+            this.btnModal.Name = "btnModal";
+            this.btnModal.Size = new System.Drawing.Size(259, 109);
+            this.btnModal.TabIndex = 4;
+            this.btnModal.Text = "모달 창 열기";
+            this.btnModal.UseVisualStyleBackColor = true;
+            this.btnModal.Click += new System.EventHandler(this.btnModeless_click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(726, 409);
+            this.Controls.Add(this.btnModal);
+            this.Controls.Add(this.btnModeless);
             this.Controls.Add(this.btnDialogBox2);
             this.Controls.Add(this.btnDialogBox3);
             this.Controls.Add(this.btnDialogBox1);
@@ -83,6 +107,8 @@ namespace Chapter6_FormPx
         private System.Windows.Forms.Button btnDialogBox1;
         private System.Windows.Forms.Button btnDialogBox3;
         private System.Windows.Forms.Button btnDialogBox2;
+        private System.Windows.Forms.Button btnModeless;
+        private System.Windows.Forms.Button btnModal;
     }
 }
 
