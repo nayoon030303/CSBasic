@@ -6,6 +6,25 @@ using System.Threading.Tasks;
 
 namespace CsBasic7
 {
+    class Products
+    {
+        private List<string> list = new List<string>();
+
+        public Products()
+        {
+            list.Add("짜장면");
+            list.Add("짬뽕");
+            list.Add("탕수육");
+            list.Add("볶음밥");
+            list.Add("마파두부");
+        }
+        
+        public string this[int i]
+        {
+            get { return list[i]; }
+            set { Console.WriteLine(i + "째 상품 설정"); }
+        }
+    }
     
     class Student
     {
@@ -37,6 +56,11 @@ namespace CsBasic7
             Console.WriteLine(wi);
             Console.WriteLine(ws);
             Console.WriteLine(wstudent);
+
+            Products ps = new Products();
+            Random rs = new Random();
+            int i = rs.Next(0, 5);
+            Console.WriteLine(ps[i]);
         }
     }
 }
